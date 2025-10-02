@@ -1,51 +1,51 @@
-# Project Setup and Start Guide
+Guia de Configuração e Inicialização do Projeto
 
-This project uses Laravel as the framework and SQLite as the database. To set up and start the project, follow these steps:
+Este projeto utiliza Laravel como framework e SQLite como banco de dados. Para configurar e iniciar o projeto, siga estes passos:
 
-**Step 1: Clone the Project**
+Passo 1: Clonar o Projeto
 
-Clone the project repository to your local machine using Git:
+Clone o repositório do projeto para sua máquina local usando o Git:
 ```bash
 git clone https://github.com/your-username/project-name.git
 ```
-**Step 2: Install Dependencies**
+Passo 2: Instalar Dependências
 
-Navigate to the project directory and install the required dependencies using Composer:
+Navegue até o diretório do projeto e instale as dependências necessárias usando o Composer:
 ```bash
 composer install
 ```
-**Step 3: Set Up Environment Variables**
+Passo 3: Configurar Variáveis de Ambiente
 
-Copy the `.env.example` file to `.env` and update the database settings to use SQLite:
+Copie o arquivo .env.example para .env e atualize as configurações do banco de dados para usar SQLite:
 ```bash
 cp .env.example .env
 ```
-In the `.env` file, set `DB_CONNECTION` to `sqlite` and `DB_DATABASE` to the path where you want to store the SQLite database file.
+No arquivo .env, defina DB_CONNECTION como sqlite e DB_DATABASE como o caminho onde você deseja armazenar o arquivo do banco de dados SQLite.
 
-**Step 4: Generate Application Key**
+Passo 4: Gerar a Chave da Aplicação
 
-Generate a new application key using the following command:
+Gere uma nova chave de aplicação com o seguinte comando:
 ```bash
 php artisan key:generate
 ```
-**Step 5: Run Migrations**
+Passo 5: Executar as Migrações
 
-Run the migrations to set up the database schema:
+Execute as migrações para configurar o esquema do banco de dados:
 ```bash
 php artisan migrate
 ```
-**Step 6: Seed the Database (Optional)**
+Passo 6: Popular o Banco de Dados (Opcional)
 
-If you want to populate the database with some initial data, run the following command:
+Se quiser preencher o banco de dados com alguns dados iniciais, execute o seguinte comando:
 ```bash
 php artisan db:seed
 ```
-**Step 7: Start the Development Server**
+Passo 7: Iniciar o Servidor de Desenvolvimento
 
-Start the development server using the following command:
+Inicie o servidor de desenvolvimento com o seguinte comando:
 ```bash
 php artisan serve
 ```
-Open your web browser and navigate to `http://localhost:8000` to access the project.
+Abra o navegador e acesse http://localhost:8000 para visualizar o projeto.
 
-That's it! You should now have the project set up and running on your local machine.
+Pronto! Agora você deve ter o projeto configurado e rodando na sua máquina local.
